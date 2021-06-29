@@ -62,10 +62,10 @@ methods: {
           this.books = resp.results;
           this.label = title;
           this.loading = false;
-      }).catch(function() {
-          alert('Error: HTTP over HTTPS Mixed content error');
-      });
-    })
+      })
+    }).catch(function() {
+        alert('Error: HTTP over HTTPS Mixed content error');
+    });
   },
   getPic(i) {
     return this.books[i].formats['image/jpeg'] || require(`@/assets/images/default_cover.jpg`);
