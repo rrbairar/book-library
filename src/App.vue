@@ -104,7 +104,7 @@ export default {
       display: flex;
       justify-content: space-between;
     }
-    a.link{
+    .book_list_container a.link{
       flex-basis: calc(50% - 50px);
     }
   }
